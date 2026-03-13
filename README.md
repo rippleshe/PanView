@@ -14,14 +14,6 @@
 
 ---
 
-</div>
-
-## 📱 预览 / Preview
-
-<p align="center">
-  <img src=".github/demo.png" alt="PanView Demo" width="800"/>
-</p>
-
 ## ✨ 特性 / Features
 
 ### 核心功能 / Core Features

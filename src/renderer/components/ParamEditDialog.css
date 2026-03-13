@@ -1,0 +1,190 @@
+.param-edit-modal {
+  .ant-modal-content {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .ant-modal-header {
+    display: none;
+  }
+
+  .ant-modal-body {
+    padding: 0;
+  }
+
+  .ant-modal-footer {
+    display: none;
+  }
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.modal-header {
+  padding: 24px 24px 20px;
+  background: linear-gradient(135deg, #f0f7ff 0%, #fff 100%);
+  border-bottom: 2px solid #e8e8e8;
+}
+
+.param-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.param-info .param-name {
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1890ff;
+  background: linear-gradient(135deg, #e6f7ff 0%, #bae7ff 100%);
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.param-description {
+  font-size: 14px;
+  color: #595959;
+  line-height: 1.6;
+}
+
+.modal-body {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boolean-editor {
+  width: 100%;
+}
+
+.boolean-toggle {
+  width: 100%;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.boolean-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.3);
+}
+
+.number-editor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.slider-wrapper {
+  padding: 0 20px;
+}
+
+.param-slider {
+  margin: 0;
+}
+
+.number-input-wrapper {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.number-input {
+  flex: 1;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.quick-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.quick-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.quick-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.string-editor {
+  width: 100%;
+}
+
+.string-input {
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.path-editor {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+}
+
+.path-input {
+  flex: 1;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.browse-button {
+  border-radius: 8px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.select-editor {
+  width: 100%;
+}
+
+.select-input {
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.modal-footer {
+  padding: 20px 24px;
+  border-top: 2px solid #e8e8e8;
+  display: flex;
+  justify-content: flex-end;
+  background: #fafafa;
+}
+
+.cancel-button {
+  border-radius: 8px;
+  font-weight: 500;
+  height: 40px;
+  padding: 0 24px;
+}
+
+.save-button {
+  border-radius: 8px;
+  font-weight: 500;
+  height: 40px;
+  padding: 0 24px;
+  box-shadow: 0 2px 8px rgba(24, 144, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.save-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.4);
+}

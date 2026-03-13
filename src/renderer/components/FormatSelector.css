@@ -1,0 +1,27 @@
+.format-selector-card {
+  background: #fff;
+  border-radius: 8px;
+}
+
+.format-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.format-label {
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.format-label label {
+  font-weight: 500;
+  color: #262626;
+}
+
+.format-description {
+  width: 200px;
+  font-size: 12px;
+  color: #8c8c8c;
+  flex-shrink: 0;
+}

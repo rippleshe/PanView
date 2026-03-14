@@ -1,47 +1,110 @@
+<div align="center">
+
+<img src="PanView.ico" alt="PanView Logo" width="80" />
+
 # PanView
 
-**现代化 Pandoc 图形界面工具 | A Modern GUI for Pandoc Document Conversion**
+**现代化 Pandoc 图形界面工具**
+
+A Modern GUI for Pandoc Document Conversion
+
+[![Version](https://img.shields.io/github/v/release/rippleshe/PanView?style=flat-square&color=4f46e5)](https://github.com/rippleshe/PanView/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-blue?style=flat-square)](https://github.com/rippleshe/PanView/releases)
+[![Electron](https://img.shields.io/badge/Electron-28-47848f?style=flat-square&logo=electron)](https://www.electronjs.org/)
+[![React](https://img.shields.io/badge/React-18-61dafb?style=flat-square&logo=react)](https://react.dev/)
+
+[下载](#-下载) · [快速开始](#-快速开始) · [截图](#-截图) · [开发](#-开发)
 
 ---
 
-## 特性
+</div>
 
-### 核心功能
+## 📖 简介
 
-- **拖拽转换** - 简单拖拽文件即可开始转换
-- **多格式支持** - 支持 Markdown、HTML、DOCX、PDF、EPUB 等多种格式
-- **丰富参数** - 灵活的 Pandoc 参数配置
-- **批量处理** - 支持多个文件同时转换
-- **智能记忆** - 自动记住上次使用的设置和路径
+PanView 是一个为 [Pandoc](https://pandoc.org) 提供图形化界面的跨平台桌面应用。  
+无需记忆复杂的命令行参数，拖拽文件即可完成格式转换。
 
-### 用户体验
+## ✨ 特性
 
-- **现代设计** - 玻璃拟态视觉风格，深色/浅色主题
-- **快速响应** - 流畅的动画和交互体验
-- **一键配置** - 直观的设置面板，无需复杂配置
-- **跨平台** - 支持 Windows、macOS、Linux
+| 功能 | 描述 |
+|------|------|
+| 🖱️ **拖拽转换** | 直接拖拽文件到窗口即可开始转换 |
+| 📄 **多格式支持** | 支持 Markdown、HTML、DOCX、PDF、EPUB 等 15+ 种格式 |
+| ⚙️ **参数配置** | 可视化配置所有 Pandoc 参数，实时预览生成的命令 |
+| 📦 **批量处理** | 支持多个文件同时转换 |
+| 🧠 **智能记忆** | 自动保存上次使用的设置、路径和参数 |
+| 🎨 **现代设计** | 玻璃拟态风格 UI，支持深色 / 浅色主题切换 |
+| 🖥️ **跨平台** | 原生支持 Windows、macOS、Linux |
+
+
+## 📥 下载
+
+前往 [**GitHub Releases**](https://github.com/rippleshe/PanView/releases) 下载最新版本：
+
+| 平台 | 安装包 | 说明 |
+|------|--------|------|
+| 🪟 Windows | `PanView Setup x.x.x.exe` | NSIS 安装程序，x64 |
+| 🍎 macOS | `PanView-x.x.x.dmg` | DMG 磁盘镜像，支持 Intel & Apple Silicon |
+| 🐧 Linux | `PanView-x.x.x.AppImage` | AppImage，x64，免安装直接运行 |
+
+> **Windows 便携版**：解压 Release 附件中的 `win-unpacked.zip`，直接运行 `PanView.exe`，无需安装。
+
+### 前置依赖
+
+使用 PanView 需要先安装 **Pandoc**：
+
+- **Windows**：[官网下载](https://pandoc.org/installing.html) 或 `winget install JohnMacFarlane.Pandoc`
+- **macOS**：`brew install pandoc`
+- **Linux**：`sudo apt install pandoc` / `sudo dnf install pandoc`
+
+安装后 PanView 会自动检测系统 PATH 中的 Pandoc，也可以在设置中手动指定路径。
 
 ---
 
-## 下载
+## 🖼️ 截图
 
-### 最新版本
-
-| 平台    | 下载链接                                                         |
-| ------- | ---------------------------------------------------------------- |
-| Windows | [PanView Setup 0.1.0.exe](./release/PanView%20Setup%200.1.0.exe) |
-| macOS   | 即将支持                                                         |
-| Linux   | 即将支持                                                         |
-
-### 便携版
-
-- [Windows Portable](./release/win-unpacked/PanView.exe)
+> 截图占位，可替换为实际应用截图
 
 ---
 
-## 快速开始
+## 🚀 快速开始
 
-### 开发模式
+### 1. 添加文件
+
+拖拽文件到主窗口，或点击 **选择文件** 按钮。支持同时添加多个文件进行批量转换。
+
+### 2. 选择格式
+
+在下拉菜单中选择输入格式（通常会自动识别）和目标输出格式。
+
+### 3. 配置参数（可选）
+
+展开 **参数面板** 可添加额外的 Pandoc 参数，右侧实时预览最终执行的完整命令。
+
+### 4. 开始转换
+
+点击 **转换** 按钮，转换结果将保存到原文件目录（或在设置中指定的默认输出目录）。
+
+### 配置默认输出目录
+
+在底部 **设置面板** → 默认输出目录 → 点击 **浏览** 选择文件夹，设置会自动持久化保存。
+
+### 指定 Pandoc 路径
+
+如需使用特定版本的 Pandoc：设置面板 → Pandoc 路径 → 点击 **浏览** 选择可执行文件。
+
+---
+
+## 🛠️ 开发
+
+### 环境要求
+
+- **Node.js** >= 18.0.0
+- **npm** >= 9.0.0
+- **Pandoc** >= 2.0（运行时依赖）
+
+### 本地运行
 
 ```bash
 # 克隆项目
@@ -51,109 +114,78 @@ cd PanView
 # 安装依赖
 npm install
 
-# 启动开发服务器
+# 启动开发服务器（支持热更新）
 npm run dev
 ```
 
-### 构建安装包
+### 构建
 
 ```bash
-# 构建 Windows 安装包
-npm run dist:win
+# 仅编译（不打包）
+npm run build
 
-# 构建 macOS 安装包
-npm run dist:mac
+# 打包当前平台
+npm run dist
 
-# 构建 Linux 安装包
-npm run dist:linux
+# 指定平台打包
+npm run dist:win    # Windows (.exe)
+npm run dist:mac    # macOS (.dmg)  — 需在 macOS 上运行
+npm run dist:linux  # Linux (.AppImage)
 ```
 
----
-
-## 使用指南
-
-### 基本转换流程
-
-1. **添加文件** - 拖拽或点击选择要转换的文件
-2. **选择格式** - 设定输入和输出格式
-3. **配置参数**（可选）- 添加额外的 Pandoc 参数
-4. **开始转换** - 点击转换按钮
-
-### 配置 Pandoc 路径
-
-如果系统没有安装 Pandoc 或想使用特定版本：
-
-1. 在底部**设置面板**中点击 Pandoc 路径的**浏览**按钮
-2. 选择 `pandoc.exe` 文件
-3. 路径会自动保存
-
-### 设置默认输出目录
-
-1. 在底部**设置面板**中点击默认输出目录的**浏览**按钮
-2. 选择目标文件夹
-3. 转换后的文件将自动保存到该目录
+> **注意**：macOS 和 Linux 安装包需要在对应平台上构建，或通过 GitHub Actions 自动构建（推送 `v*` tag 即可触发）。
 
 ---
 
-## 技术栈
+## 🏗️ 技术栈
 
-- **Electron 28** - 跨平台桌面应用框架
-- **React 18** - 前端 UI 框架
-- **TypeScript 5** - 类型安全的 JavaScript
-- **Vite 5** - 现代化构建工具
-- **Tailwind CSS 3** - 原子化 CSS 框架
-- **Zustand** - 轻量级状态管理
-- **Ant Design** - 企业级 UI 组件库
+| 层级 | 技术 |
+|------|------|
+| 桌面框架 | Electron 28 |
+| 前端框架 | React 18 + TypeScript 5 |
+| 构建工具 | Vite 5 + electron-vite |
+| 打包工具 | electron-builder |
+| UI 组件 | Ant Design 5 |
+| 样式 | Tailwind CSS 3 |
+| 状态管理 | Zustand |
+| 动画 | Framer Motion |
 
 ---
 
-## 项目结构
+## 📁 项目结构
 
 ```
 PanView/
 ├── src/
-│   ├── main/           # Electron 主进程
-│   │   ├── index.ts    # 入口文件
-│   │   ├── window.ts   # 窗口管理
-│   │   └── handlers/   # IPC 处理器
-│   │       ├── file.ts    # 文件操作
-│   │       └── pandoc.ts  # Pandoc 执行
-│   ├── preload/        # 预加载脚本
-│   └── renderer/       # React 渲染进程
-│       ├── components/ # UI 组件
-│       ├── stores/     # 状态管理
-│       ├── utils/      # 工具函数
-│       └── types/      # 类型定义
-├── release/            # 构建输出
-├── package.json
+│   ├── main/               # Electron 主进程
+│   │   ├── index.ts        # 应用入口 & 生命周期
+│   │   ├── window.ts       # 窗口管理
+│   │   └── handlers/       # IPC 处理器
+│   │       ├── file.ts     # 文件选择 & 操作
+│   │       └── pandoc.ts   # Pandoc 调用 & 执行
+│   ├── preload/            # 预加载脚本（安全桥接）
+│   └── renderer/           # React 渲染进程
+│       ├── components/     # UI 组件
+│       ├── stores/         # Zustand 状态
+│       ├── hooks/          # 自定义 Hooks
+│       ├── utils/          # 工具函数
+│       └── types/          # TypeScript 类型定义
+├── build/                  # 构建资源（图标等）
+├── release/                # 打包输出目录
+├── .github/workflows/      # CI/CD 自动构建
 └── electron.vite.config.ts
 ```
 
 ---
 
-## 许可证
+## 📄 许可证
 
-本项目基于 MIT 许可证开源。
+本项目基于 [MIT License](LICENSE) 开源，欢迎自由使用和二次开发。
 
 ---
 
-## English
+<div align="center">
 
-### About PanView
+如果这个项目对你有帮助，欢迎点个 ⭐ Star！
 
-PanView is a modern, user-friendly GUI application for Pandoc, the universal document converter. It provides an intuitive interface for document conversion without needing to use command-line tools.
-
-### Key Features
-
-- Drag & Drop Conversion - Simply drag files to convert
-- Multi-format Support - Markdown, HTML, DOCX, PDF, EPUB, and more
-- Rich Parameters - Flexible Pandoc parameter configuration
-- Batch Processing - Convert multiple files at once
-- Smart Memory - Automatically remembers your settings
-
-### Tech Stack
-
-- Electron 28 + React 18 + TypeScript 5
-- Vite 5 + Tailwind CSS 3
-- Zustand for state management
-- Ant Design for UI components
+</div>

@@ -14,7 +14,7 @@ A Modern GUI for Pandoc Document Conversion
 [![Electron](https://img.shields.io/badge/Electron-28-47848f?style=flat-square&logo=electron)](https://www.electronjs.org/)
 [![React](https://img.shields.io/badge/React-18-61dafb?style=flat-square&logo=react)](https://react.dev/)
 
-[下载](#-下载) · [快速开始](#-快速开始) · [截图](#-截图) · [开发](#-开发)
+[下载](#-下载) · [快速开始](#-快速开始) · [开发](#-开发)
 
 ---
 
@@ -59,12 +59,6 @@ PanView 是一个为 [Pandoc](https://pandoc.org) 提供图形化界面的跨平
 - **Linux**：`sudo apt install pandoc` / `sudo dnf install pandoc`
 
 安装后 PanView 会自动检测系统 PATH 中的 Pandoc，也可以在设置中手动指定路径。
-
----
-
-## 🖼️ 截图
-
-> 截图占位，可替换为实际应用截图
 
 ---
 
